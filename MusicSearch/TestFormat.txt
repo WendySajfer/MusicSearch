@@ -1,0 +1,133 @@
+---------------------------
+
+---------------------------
+Calculating features for genre : Рок
+
+Calculating features for genre : Метал
+
+Calculating features for genre : Поп
+
+Calculating features for genre : Джаз
+
+Calculating features for genre : Блюз
+
+Calculating features for genre : Ритм-н-блюз
+
+Calculating features for genre : Хип-хоп
+
+Calculating features for genre : Электронная
+
+Calculating features for genre : Классика
+
+Calculating features for genre : Народная
+
+Accuracy : 78.57142686843872%
+
+tensorflow_keras_spectrograms_genre_1;Calculating features for genre : Рок
+
+Calculating features for genre : Метал
+
+Calculating features for genre : Поп
+
+Calculating features for genre : Джаз
+
+Calculating features for genre : Блюз
+
+Calculating features for genre : Ритм-н-блюз
+
+Calculating features for genre : Хип-хоп
+
+Calculating features for genre : Электронная
+
+Calculating features for genre : Классика
+
+Calculating features for genre : Народная
+
+Epoch 1/10
+
+
+
+1/2 [==============>...............] - ETA: 0s - loss: 308.9606 - sparse_categorical_accuracy: 0.0938
+
+2/2 [==============================] - 1s 192ms/step - loss: 329.7036 - sparse_categorical_accuracy: 0.1250 - val_loss: 682.4329 - val_sparse_categorical_accuracy: 0.2143
+
+Epoch 2/10
+
+
+
+1/2 [==============>...............] - ETA: 0s - loss: 639.8632 - sparse_categorical_accuracy: 0.2500
+
+2/2 [==============================] - 0s 47ms/step - loss: 576.7321 - sparse_categorical_accuracy: 0.3000 - val_loss: 281.1433 - val_sparse_categorical_accuracy: 0.2143
+
+Epoch 3/10
+
+
+
+1/2 [==============>...............] - ETA: 0s - loss: 161.4546 - sparse_categorical_accuracy: 0.4688
+
+2/2 [==============================] - 0s 48ms/step - loss: 145.1229 - sparse_categorical_accuracy: 0.5000 - val_loss: 59.7532 - val_sparse_categorical_accuracy: 0.6429
+
+Epoch 4/10
+
+
+
+1/2 [==============>...............] - ETA: 0s - loss: 67.7790 - sparse_categorical_accuracy: 0.7500
+
+2/2 [==============================] - 0s 47ms/step - loss: 56.1631 - sparse_categorical_accuracy: 0.7750 - val_loss: 39.8129 - val_sparse_categorical_accuracy: 0.7857
+
+Epoch 5/10
+
+
+
+1/2 [==============>...............] - ETA: 0s - loss: 5.1467 - sparse_categorical_accuracy: 0.9062
+
+2/2 [==============================] - 0s 48ms/step - loss: 4.1173 - sparse_categorical_accuracy: 0.9250 - val_loss: 37.5107 - val_sparse_categorical_accuracy: 0.7857
+
+Epoch 6/10
+
+
+
+1/2 [==============>...............] - ETA: 0s - loss: 1.2251 - sparse_categorical_accuracy: 0.9688
+
+2/2 [==============================] - 0s 47ms/step - loss: 1.0619 - sparse_categorical_accuracy: 0.9500 - val_loss: 29.8856 - val_sparse_categorical_accuracy: 0.7857
+
+Epoch 7/10
+
+
+
+1/2 [==============>...............] - ETA: 0s - loss: 0.0000e+00 - sparse_categorical_accuracy: 1.0000
+
+2/2 [==============================] - 0s 50ms/step - loss: 0.0000e+00 - sparse_categorical_accuracy: 1.0000 - val_loss: 29.8856 - val_sparse_categorical_accuracy: 0.7857
+
+Epoch 8/10
+
+
+
+1/2 [==============>...............] - ETA: 0s - loss: 0.0000e+00 - sparse_categorical_accuracy: 1.0000
+
+2/2 [==============================] - 0s 49ms/step - loss: 0.0000e+00 - sparse_categorical_accuracy: 1.0000 - val_loss: 29.8856 - val_sparse_categorical_accuracy: 0.7857
+
+Epoch 9/10
+
+
+
+1/2 [==============>...............] - ETA: 0s - loss: 0.0000e+00 - sparse_categorical_accuracy: 1.0000
+
+2/2 [==============================] - 0s 47ms/step - loss: 0.0000e+00 - sparse_categorical_accuracy: 1.0000 - val_loss: 29.8856 - val_sparse_categorical_accuracy: 0.7857
+
+Epoch 10/10
+
+
+
+1/2 [==============>...............] - ETA: 0s - loss: 0.0000e+00 - sparse_categorical_accuracy: 1.0000
+
+2/2 [==============================] - 0s 48ms/step - loss: 0.0000e+00 - sparse_categorical_accuracy: 1.0000 - val_loss: 29.8856 - val_sparse_categorical_accuracy: 0.7857
+
+Accuracy : 78.57142686843872%
+
+
+
+
+---------------------------
+ОК   
+---------------------------
