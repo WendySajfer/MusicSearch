@@ -50,10 +50,12 @@ namespace MusicSearch
             {
                 string scriptPath = Path.GetFullPath(Path.Combine("MusicSearch", "PythonNetwork", "create_network_def.py"), basePath);
 
+                string flag = Flag == true ? "True" : "";
+
                 ProcessStartInfo start = new ProcessStartInfo();
                 start.FileName = pythonPath;
                 // Format the arguments string with the script path and the arguments array
-                start.Arguments = string.Format("\"{0}\" \"{1}\" \"{2}\" \"{3}\" \"{4}\" \"{5}\"", scriptPath, Flag, DirCreateSongs, DirCreateSongsWav, string.Join(",", Genres), CountEpochs);
+                start.Arguments = string.Format("\"{0}\" \"{1}\" \"{2}\" \"{3}\" \"{4}\" \"{5}\"", scriptPath, flag, DirCreateSongs, DirCreateSongsWav, string.Join(",", Genres), CountEpochs);
                 start.UseShellExecute = false;
                 start.RedirectStandardOutput = true;
                 start.CreateNoWindow = true;
@@ -79,10 +81,12 @@ namespace MusicSearch
             {
                 string scriptPath = Path.GetFullPath(Path.Combine("MusicSearch", "PythonNetwork", "train_network_def.py"), basePath);
 
+                string flag = Flag == true ? "True" : "";
+
                 ProcessStartInfo start = new ProcessStartInfo();
                 start.FileName = pythonPath;
                 // Format the arguments string with the script path and the arguments array
-                start.Arguments = string.Format("\"{0}\" \"{1}\" \"{2}\" \"{3}\" \"{4}\" \"{5}\" \"{6}\"", scriptPath, Flag, PathModel, DirLearningSongs, DirLearningSongsWav, string.Join(",", Genres), CountEpochs);
+                start.Arguments = string.Format("\"{0}\" \"{1}\" \"{2}\" \"{3}\" \"{4}\" \"{5}\" \"{6}\"", scriptPath, flag, PathModel, DirLearningSongs, DirLearningSongsWav, string.Join(",", Genres), CountEpochs);
                 start.UseShellExecute = false;
                 start.RedirectStandardOutput = true;
                 start.CreateNoWindow = true;

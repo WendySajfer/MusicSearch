@@ -210,7 +210,17 @@ if __name__ == "__main__":
         result = create_network_main(*args)
         print(result)
     except Exception as e:
-        print("An error occurred: ", e)     
+        print("An error occurred: ", e)    
+        
+#Test
+#args = []
+#args.append("") 
+#args.append("G:\\My\\Proga\\MusicSearch\\MusicSearch\\MusicSearch\\bin\\Debug\\net6.0-windows\\data\\songs_for_create_network")
+#args.append("G:\\My\\Proga\\MusicSearch\\MusicSearch\\MusicSearch\\bin\\Debug\\net6.0-windows\\data\\songs_for_create_network_wav")
+#args.append("Рок,Метал,Поп,Джаз,Блюз,Ритм-н-блюз,Хип-хоп,Электронная,Классика,Народная")
+#args.append("100")
+#result = create_network_main(*args)
+#print(result)
 
 #Test
-#create_network_main(True, r"G:\My\Proga\MusicSearch\MusicSearch\MusicSearch\bin\Debug\net6.0-windows\data\songs_for_create_network", r"G:\My\Proga\MusicSearch\MusicSearch\MusicSearch\bin\Debug\net6.0-windows\data\songs_for_create_network_wav", ["Рок", "Метал", "Поп", "Джаз", "Блюз", "Ритм-н-блюз", "Хип-хоп", "Электронная", "Классика", "Народная"], 100)
+#create_network_main(False, r"G:\My\Proga\MusicSearch\MusicSearch\MusicSearch\bin\Debug\net6.0-windows\data\songs_for_create_network", r"G:\My\Proga\MusicSearch\MusicSearch\MusicSearch\bin\Debug\net6.0-windows\data\songs_for_create_network_wav", ["Рок", "Метал", "Поп", "Джаз", "Блюз", "Ритм-н-блюз", "Хип-хоп", "Электронная", "Классика", "Народная"], 100)

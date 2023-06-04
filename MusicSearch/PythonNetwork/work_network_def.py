@@ -138,14 +138,15 @@ def search_genre_main(file_path_for_model, file_path_for_mp3, genres):
         for i in range(len(genres)):
             result_stat.append((genres[i], mean_prediction[0][i]))
 
-        result = f"Общий результат.\nЖанр: {max_genre}\nСтатистика: {str(result_stat)}\n" + result
-        
         data = []
         data.append([file_name] + list(mean_prediction[0]))
+        file_path_excel = os.path.join(os.path.dirname(__file__),"result.xlsx")
         for i in range(len(y)):
             data.append([f"Часть {i+1}"] + list(y[i][0]))
         df = pd.DataFrame(data, columns=["Название"] + genres)
-        df.to_excel("result.xlsx", index=False)
+        df.to_excel(file_path_excel, index=False)
+
+        result = f"Общий результат.\nЖанр: {max_genre}\nСтатистика: {str(result_stat)}\n" + result
 
         return result
 
@@ -170,5 +171,13 @@ if __name__ == "__main__":
         print("An error occurred: ", e) 
 
 #Test
+#args = []
+#args.append("G:\\My\\Proga\\MusicSearch\\MusicSearch\\MusicSearch\\bin\\Debug\\net6.0-windows\\models\\tensorflow_keras_spectrograms_genre_1")
+#args.append("G:\\My\\Proga\\MusicSearch\\MusicSearch\\MusicSearch\\bin\\Debug\\net6.0-windows\\data\\songs_for_create_network\\Рок\\AC_DC - Shot in the Dark.mp3")
+#args.append("Рок,Метал,Поп,Джаз,Блюз,Ритм-н-блюз,Хип-хоп,Электронная,Классика,Народная")
+#result = search_genre_main(*args)
+#print(result)
+
+
 #answer = search_genre_main(r"G:\My\Proga\MusicSearch\MusicSearch\MusicSearch\bin\Debug\net6.0-windows\models\tensorflow_keras_spectrograms_genre_0",r"G:\My\Proga\MusicSearch\MusicSearch\MusicSearch\bin\Debug\net6.0-windows\data\songs_for_test\Like That.mp3", ["Рок", "Метал", "Поп", "Джаз", "Блюз", "Ритм-н-блюз", "Хип-хоп", "Электронная", "Классика", "Народная"])
 #print(answer)
