@@ -1,22 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
-using NAudio;
 using NAudio.Wave;
 using Spectrogram;
 using System.Drawing;
-using System.Drawing.Imaging;
-using System.Reflection.PortableExecutable;
-using Microsoft.VisualBasic.Devices;
-using static Tensorflow.TensorShapeProto.Types;
-/*using NWaves;
-using NWaves.FeatureExtractors.Options;
-using ScottPlot;
-using NWaves.Audio;
-using ScottPlot.Plottable;*/
 
 namespace MusicSearch
 {
@@ -70,7 +58,7 @@ namespace MusicSearch
                 mp3Reader.CopyTo(wavWriter);
             }
             (double[] audio, int sampleRate) = ReadWavMono(file + ".wav");
-            var sg = new SpectrogramGenerator(sampleRate, fftSize: 4096, stepSize: stepSize/*500*/, maxFreq: 3000, fixedWidth: 224);
+            var sg = new SpectrogramGenerator(sampleRate, fftSize: 4096, stepSize: stepSize, maxFreq: 3000, fixedWidth: 224);
             sg.Add(audio);
             sg.SaveImage(@"buf\" + file + ".jpg");
             File.Delete(wavFile);

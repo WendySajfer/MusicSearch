@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
-using Python.Runtime;
 using System.Diagnostics;
-using System.Windows.Shapes;
 using Path = System.IO.Path;
 
 
